@@ -40,3 +40,6 @@ const studentsCard = (Card) => {
   }
 
 }
+const startApp = () => {
+  studentsCard(students);
+}
