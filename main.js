@@ -17,4 +17,6 @@ const students = [
     name: "Newt Scamander",
     house: "Hufflepuff",
   },
-]
+];
+
+const expelledStudents = [];
