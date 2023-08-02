@@ -27,7 +27,7 @@ const renderToDom = (divId, htmlToRender) => {
 };
 
 const studentsCard = () => {
-  for (let domString of students) {
+  for (let  of students) {
     domString += `<div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
