@@ -38,7 +38,7 @@ const studentsCard = (array) => {
     </div>
   </div>`;
   }
-  renderToDom("divId", domString)
+  renderToDom("divId", domString);
 }
 
 
