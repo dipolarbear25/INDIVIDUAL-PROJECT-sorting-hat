@@ -26,9 +26,8 @@ const renderToDom = (divId, htmlToRender) => {
   selectedDiv.innerHTML = htmlToRender;
 };
 
-const studentsCard = (array) => {
-  let domString = "";
-  for (const  of array) {
+const studentsCard = () => {
+  for (let domString of students) {
     domString += `<div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
@@ -45,6 +44,6 @@ const studentsCard = (array) => {
 
 
 const startApp = () => {
-  studentsCard(students);
+  studentsCard();
 }
 startApp();
