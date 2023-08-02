@@ -18,7 +18,7 @@ const students = [
     house: "Hufflepuff",
   },
 ];
-
+const student = [{}];
 const expelledStudents = [];
 
 const renderToDom = (divId, htmlToRender) => {
@@ -27,7 +27,7 @@ const renderToDom = (divId, htmlToRender) => {
 };
 
 const studentsCard = () => {
-  for (let  of students) {
+  for (let student of students) {
     domString += `<div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
