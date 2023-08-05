@@ -42,7 +42,7 @@ for (const student of students) {
 targeting.innerHTML = cards;
 
 function btnCard(){
-document.querySelector("name").innerHTML = cards
+document.querySelector("name")
 }
 
 btn.addEventListener('click', btnCard)    // listening for a click 
