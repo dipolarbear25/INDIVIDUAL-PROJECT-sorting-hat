@@ -25,26 +25,32 @@ const btn = document.querySelector("#Submit")
 
 const targeting = document.querySelector("#wizard-card")
 
+function btnCard(){
 
+}
+//create a function for event listen
+let cards = "";
 
-let domString = "";
-  for (const student of students) {
-      domString += `<div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">${student.house}</h5>
-        <p class="card-text">${student.name}</p>
-        <a href="#" class="btn btn-primary">Expel</a>
-      </div>
-    </div>`;
+for (const student of students) {
+  cards += `<div class="card" id="stuCard" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+  <h5 class="card-title">${student.house}</h5>
+  <p class="card-text">${student.name}</p>
+  <a href="#" class="btn btn-primary">Expel</a>
+  </div>
+  </div>`;
     };
-    targeting.innerHTML = domString;
+targeting.innerHTML = cards;
   
-btn.addEventListener('click', () => {
+btn.addEventListener('click', btnCard)    // listening for a click 
 
-})    // listening for a click 
+
+
+ 
+
+
+
+
+
 //cards need to be rendered (done) and a form to create the cards and be able to submit the form. by MONDAY.
-
-
-
-cardsondom;
