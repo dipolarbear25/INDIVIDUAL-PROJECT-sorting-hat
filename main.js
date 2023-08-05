@@ -39,11 +39,12 @@ let domString = "";
     </div>`;
     };
   }
+cardsOnDom;
 targeting.innerHTML = domString;
 
 
 
 btn.addEventListener('click', () => {
-  
+
 })    // listening for a click 
 //cards need to be rendered (done) and a form to create the cards and be able to submit the form. by MONDAY.
