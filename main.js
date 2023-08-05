@@ -25,11 +25,9 @@ const btn = document.querySelector("#Submit")
 
 const targeting = document.querySelector("#wizard-card")
 
-function btnCard(){
 
-}
 //create a function for event listen
-let cards = "";
+const cards = "";
 
 for (const student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
@@ -42,7 +40,11 @@ for (const student of students) {
   </div>`;
     };
 targeting.innerHTML = cards;
-  
+
+function btnCard(){
+document.querySelector("name").innerHTML = cards
+}
+
 btn.addEventListener('click', btnCard)    // listening for a click 
 
 
