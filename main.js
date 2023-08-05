@@ -40,7 +40,7 @@ let domString = "";
     };
     targeting.innerHTML = domString;
   };
-cardsOnDom;
+
 
 
 
@@ -49,3 +49,7 @@ btn.addEventListener('click', () => {
 
 })    // listening for a click 
 //cards need to be rendered (done) and a form to create the cards and be able to submit the form. by MONDAY.
+
+
+
+cardsOnDom;
