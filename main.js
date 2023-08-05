@@ -21,14 +21,15 @@ const students = [
 
 const expelledStudents = [];
 
+
+
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
 };
 
 const studentsCard = () => {
-  for (let studentsa of students) {
-    let studentsa = 
+  for (let name of students) { 
     domString += `<div class="card" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
@@ -38,6 +39,7 @@ const studentsCard = () => {
     </div>
   </div>`;
   }
+  
   renderToDom("wizard-card", domString);
 }
 
