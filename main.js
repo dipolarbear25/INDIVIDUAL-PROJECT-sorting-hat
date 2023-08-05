@@ -22,11 +22,7 @@ const students = [
 const expelledStudents = [];
 
 
-
-const renderToDom = ("wizard-card", htmlToRender) => {
-  const selectedDiv = document.querySelector("#wizard-card");
-  selectedDiv.innerHTML = htmlToRender;
-};
+const targeting = document.querySelector("#wizard-card")
 
 let domString = ""
 
@@ -40,10 +36,7 @@ for (const student of students) {
       </div>
     </div>`;
     };
-const startApp = () => {
-  studentsCard();
-}
-startApp();
 
+targeting.innerHTML = domString;
 
 //cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
