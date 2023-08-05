@@ -38,9 +38,10 @@ let domString = "";
       </div>
     </div>`;
     };
-  }
+    targeting.innerHTML = domString;
+  };
 cardsOnDom;
-targeting.innerHTML = domString;
+
 
 
 
