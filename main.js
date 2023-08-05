@@ -32,11 +32,11 @@ for (const student of students) {
       <div class="card-body">
         <h5 class="card-title">${student.name}</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <a href="#" class="btn btn-primary">Expel</a>
       </div>
     </div>`;
     };
 
 targeting.innerHTML = domString;
 
-//cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
+//cards need to be rendered (done) and a form to create the cards and be able to submit the form. by MONDAY.
