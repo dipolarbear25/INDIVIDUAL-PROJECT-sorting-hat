@@ -21,12 +21,14 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
+const btn = document.querySelector("#Submit")
 
 const targeting = document.querySelector("#wizard-card")
 
-let domString = ""
 
-for (const student of students) {
+const cardsOnDom = (students) => {
+let domString = "";
+  for (const student of students) {
       domString += `<div class="card" style="width: 18rem;">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
@@ -36,10 +38,12 @@ for (const student of students) {
       </div>
     </div>`;
     };
-
+  }
 targeting.innerHTML = domString;
 
-function doSomething(){
 
-}
+
+btn.addEventListener('click', () => {
+  
+})    // listening for a click 
 //cards need to be rendered (done) and a form to create the cards and be able to submit the form. by MONDAY.
