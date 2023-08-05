@@ -26,7 +26,7 @@ const btn = document.querySelector("#Submit")
 const targeting = document.querySelector("#wizard-card")
 
 
-const cardsOnDom = (students) => {
+const cardsOnDom = () => {
 let domString = "";
   for (const student of students) {
       domString += `<div class="card" style="width: 18rem;">
@@ -40,11 +40,7 @@ let domString = "";
     };
     targeting.innerHTML = domString;
   };
-
-
-
-
-
+  
 btn.addEventListener('click', () => {
 
 })    // listening for a click 
