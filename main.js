@@ -21,10 +21,13 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
-const btn = document.querySelector("#Submit");
+const form = document.getElementById("formId")
 
 const targeting = document.querySelector("#wizard-card");
 
+form.addEventListener('Submit',(e) => {
+  e.preventDefault();
+});    //looking for click
 
 //create a function for event listener
 
@@ -42,10 +45,7 @@ for (let student of students) {
     };
 targeting.innerHTML = cards;
 
-//const cardOnDom = document.getElementById("fname").value = 
-
-btn.addEventListener('click',);    // listening for a click 
-
+const cardOnDom = document.getElementById("fname").value  
 
 
  
