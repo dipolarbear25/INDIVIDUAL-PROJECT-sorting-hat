@@ -51,7 +51,7 @@ console.log(randomHouse)
  targeting.innerHTML = cards; 
 
 
-form.addEventListener('Submit',(e) => {1
+form.addEventListener('Submit',(e) => {
 
   let cards = ""
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
