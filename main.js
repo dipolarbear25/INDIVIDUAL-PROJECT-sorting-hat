@@ -50,7 +50,4 @@ const cardOnDom = document.getElementById("fname").value
  
 
 
-
-
-
 //cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
