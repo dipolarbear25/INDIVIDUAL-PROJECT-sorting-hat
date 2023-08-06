@@ -25,34 +25,34 @@ const form = document.getElementById("formId")
 
 const input = document.getElementById("fnameId")
 
-console.log(form);
-
-//const targeting = document.querySelector("wizard-card");
-
-//console.log(submit)
-
-// form.addEventListener('Submit',(e) => {
-//   e.preventDefault();
-// });    //looking for btn press and stops page refresh
-
-// const randomHouse = students[Math.floor(Math.random() * students.house)]
-// console.log(randomHouse)
 
 
-// let cards = "";  //important
-// function cardsOnDom(){
-// for (let student of students) {
-//   cards += `<div class="card" id="stuCard" style="width: 18rem;">
-//   <img src="..." class="card-img-top" alt="...">
-//   <div class="card-body">
-//   <h5 class="card-title">${student.house}</h5>
-//   <p class="card-text">${student.name}</p>
-//   <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
-//   </div>
-//   </div>`;
-//     }};
-// cardsOnDom();
-// targeting.innerHTML = cards; 
+const targeting = document.querySelector("wizard-card");
+
+document.write("fnameId")
+
+form.addEventListener('Submit',(e) => {
+  e.preventDefault();
+});    //looking for btn press and stops page refresh
+
+const randomHouse = students[Math.floor(Math.random() * students.house)]
+console.log(randomHouse)
+
+
+let cards = "";  //important
+function cardsOnDom(){
+for (let student of students) {
+  cards += `<div class="card" id="stuCard" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+  <h5 class="card-title">${student.house}</h5>
+  <p class="card-text">${student.name}</p>
+  <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
+  </div>
+  </div>`;
+    }};
+cardsOnDom();
+targeting.innerHTML = cards; 
 
 
  
