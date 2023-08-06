@@ -44,9 +44,7 @@ for (let student of students) {
   </div>`;
     }};
 cardsOnDom();
-targeting.innerHTML = cards;
-
-const cardOnDom = document.getElementById("fname").value  
+targeting.innerHTML = cards; 
 
 
  
