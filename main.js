@@ -23,7 +23,7 @@ const expelledStudents = [];
 
 const form = document.getElementById("formId")
 
-const input = "austin"
+const input = document.getElementById("fnameId").value
 
 
 
