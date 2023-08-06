@@ -25,11 +25,11 @@ const btn = document.querySelector("#Submit");
 
 const targeting = document.querySelector("#wizard-card");
 
-const cards = "";
+
 //create a function for event listen
 function cardOnDom() {
 
-
+const cards = "";
 
 for (const student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
@@ -43,6 +43,7 @@ for (const student of students) {
     };
 targeting.innerHTML = cards;
 };
+cardOnDom();
 
 function btnCard(){
 document.querySelector("name")    //on click
