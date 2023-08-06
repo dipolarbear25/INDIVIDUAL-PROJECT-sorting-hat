@@ -23,7 +23,7 @@ const students = [                     //object for examples of students in hous
 
 const form = document.getElementById("formId")
 
-// const input = document.getElementById("fnameId").innerHTML
+const input = document.getElementById("fnameId").innerHTML
 
 
 
@@ -53,12 +53,12 @@ const form = document.getElementById("formId")
 // targeting.innerHTML = cards; 
 
 
-form.addEventListener('Submit',(e) => {
+input.addEventListener('Submit',(e) => {
   e.preventDefault();
-  const studentInput = new FormData(form);
+  const studentInput = new FormData(input);
   const obj = Object.fromEntries(studentInput);
   Array.push(studentInput);
-  document.write(form);
+  document.write(input);
 
   let cards = ""
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
