@@ -23,13 +23,13 @@ const expelledStudents = [];
 
 const form = document.getElementById("formId")
 
-const input = document.getElementById("input")
+const input = document.getElementById("fnameId")
 
 
 
 const targeting = document.querySelector("wizard-card");
 
-document.write("fnameId")
+document.write(input)
 
 form.addEventListener('Submit',(e) => {
   e.preventDefault();
