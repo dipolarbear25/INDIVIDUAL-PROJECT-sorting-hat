@@ -23,7 +23,7 @@ const expelledStudents = [];
 
 let submit = document.getElementById("#Submit")
 
-const form = document.getElementById("formId")
+const form = document.getElementById("#formId")
 
 const targeting = document.querySelector("#wizard-card");
 
