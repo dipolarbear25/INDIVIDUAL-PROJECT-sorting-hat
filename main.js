@@ -21,7 +21,7 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
-const submit = document.getElementById("Submit")
+const submit = document.getElementById("fname")
 
 const form = document.getElementById("formId")
 
