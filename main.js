@@ -21,9 +21,9 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
-const btn = document.getElementById("#Submit");
+const btn = document.querySelector("#Submit");
 
-const targeting = document.getElementById("#wizard-card");
+const targeting = document.querySelector("#wizard-card");
 
 
 //create a function for event listener
