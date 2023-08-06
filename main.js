@@ -19,51 +19,31 @@ const students = [                     //object for examples of students in hous
   },
 ];
 
- const expelledStudents = [];
+const expelledStudents = [];
 
 const form = document.getElementById("formId")
 
-const input = document.getElementById("fnameId").innerHTML
-
-
-
 const targeting = document.querySelector("wizard-card");
 
-document.write(input)
-
-const randomHouse = students[Math.floor(Math.random() * students.house)]
-console.log(randomHouse)
-
-
- let cards = "";  //important
- function cardsOnDom(){
- for (let student of students) {
-   cards += `<div class="card" id="stuCard" style="width: 18rem;">
-   <img src="..." class="card-img-top" alt="...">
-   <div class="card-body">
-   <h5 class="card-title">${student.house}</h5>
-  <p class="card-text">${student.name}</p>
-   <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
-   </div>
-  </div>`;
-     }};
- cardsOnDom();
- targeting.innerHTML = cards; 
-
-
 form.addEventListener('Submit',(e) => {
+  e.preventDefault();
+});    //looking for btn press and stops page refresh
 
-  let cards = ""
+let cards = "";  //important
+function cardsOnDom(){
+for (let student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
-  <h5 class="card-title"></h5>
-  <p class="card-text"></p>
+  <h5 class="card-title">${student.house}</h5>
+  <p class="card-text">${student.name}</p>
   <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
   </div>
   </div>`;
-})
- 
+    }};
+cardsOnDom();
+targeting.innerHTML = cards; 
+
 
 
 //cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
