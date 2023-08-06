@@ -21,11 +21,11 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
-let submit = document.getElementById("#Submit")
+let submit = document.getElementById("Submit")
 
-const form = document.getElementById("#formId")
+const form = document.getElementById("formId")
 
-const targeting = document.querySelector("#wizard-card");
+const targeting = document.querySelector("wizard-card");
 
 form.addEventListener('Submit',(e) => {
   e.preventDefault();
