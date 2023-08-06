@@ -42,8 +42,8 @@ for (let student of students) {
   <a href="#" class="btn btn-primary">Expel</a>
   </div>
   </div>`;
-    }}
-cardOnDom(form)
+    }};
+cardOnDom(form);
 targeting.innerHTML = cards;
 
 const cardOnDom = document.getElementById("fname").value  
