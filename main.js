@@ -21,7 +21,7 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
-let submit = document.getElementById("Submit")
+var submit = document.getElementById("Submit")
 
 const form = document.getElementById("formId")
 
@@ -30,6 +30,10 @@ const targeting = document.querySelector("wizard-card");
 form.addEventListener('Submit',(e) => {
   e.preventDefault();
 });    //looking for btn press and stops page refresh
+
+const randomHouse = students[Math.floor(Math.random() * students.house)]
+console.log(randomHouse)
+
 
 let cards = "";  //important
 function cardsOnDom(){
