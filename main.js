@@ -42,9 +42,9 @@ for (let student of students) {
     };
 targeting.innerHTML = cards;
 
-const cardOnDom = document.getElementById("name").value = 
+//const cardOnDom = document.getElementById("fname").value = 
 
-btn.addEventListener('click', btnCard);    // listening for a click 
+btn.addEventListener('click',);    // listening for a click 
 
 
 
