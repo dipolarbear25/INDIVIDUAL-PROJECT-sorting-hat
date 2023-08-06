@@ -28,9 +28,9 @@ const targeting = document.querySelector("#wizard-card");
 
 //create a function for event listen
 
-let cards = "";
+let cards = "";  //important
 
-for (const student of students) {
+for (let student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
