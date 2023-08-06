@@ -43,7 +43,7 @@ for (let student of students) {
   </div>
   </div>`;
     }};
-cardOnDom(form);
+cardsOnDom(form);
 targeting.innerHTML = cards;
 
 const cardOnDom = document.getElementById("fname").value  
