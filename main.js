@@ -25,7 +25,7 @@ const form = document.getElementById("formId")
 
 const input = document.getElementById("fnameId")
 
-console.log(fnameid);
+console.log("hello");
 
 //const targeting = document.querySelector("wizard-card");
 
