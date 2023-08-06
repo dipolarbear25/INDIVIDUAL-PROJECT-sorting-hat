@@ -21,6 +21,8 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
+const submit = getElementById("#Submit")
+
 const form = document.getElementById("formId")
 
 const targeting = document.querySelector("#wizard-card");
