@@ -21,11 +21,13 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
-var submit = document.getElementById("Submit")
+const submit = document.getElementById("Submit")
 
 const form = document.getElementById("formId")
 
 const targeting = document.querySelector("wizard-card");
+
+console.log(submit)
 
 form.addEventListener('Submit',(e) => {
   e.preventDefault();
@@ -52,6 +54,6 @@ targeting.innerHTML = cards;
 
 
  
-console.log(submit);
+
 
 //cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
