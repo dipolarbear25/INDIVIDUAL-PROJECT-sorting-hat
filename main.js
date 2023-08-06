@@ -58,7 +58,7 @@ form.addEventListener('Submit',(e) => {
   const studentInput = new FormData(form);
   const obj = Object.fromEntries(studentInput);
   Array.push(studentInput);
-  console.log(studentInput);
+  console.log(form);
 
   let cards = ""
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
