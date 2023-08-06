@@ -27,9 +27,7 @@ const targeting = document.querySelector("#wizard-card");
 
 form.addEventListener('Submit',(e) => {
   e.preventDefault();
-});    //looking for click
-
-//create a function for event listener
+});    //looking for btn press and stops page refresh
 
 let cards = "";  //important
 function cardsOnDom(){
@@ -43,7 +41,7 @@ for (let student of students) {
   </div>
   </div>`;
     }};
-cardsOnDom(form);
+cardsOnDom();
 targeting.innerHTML = cards;
 
 const cardOnDom = document.getElementById("fname").value  
