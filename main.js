@@ -37,7 +37,7 @@ for (let student of students) {
   <div class="card-body">
   <h5 class="card-title">${student.house}</h5>
   <p class="card-text">${student.name}</p>
-  <a href="#" class="btn btn-primary">Expel</a>
+  <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
   </div>
   </div>`;
     }};
