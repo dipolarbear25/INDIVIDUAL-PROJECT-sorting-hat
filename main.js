@@ -32,7 +32,7 @@ form.addEventListener('Submit',(e) => {
 //create a function for event listener
 
 let cards = "";  //important
-
+function cardsOnDom(){
 for (let student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
@@ -42,7 +42,8 @@ for (let student of students) {
   <a href="#" class="btn btn-primary">Expel</a>
   </div>
   </div>`;
-    };
+    }}
+cardOnDom(form)
 targeting.innerHTML = cards;
 
 const cardOnDom = document.getElementById("fname").value  
