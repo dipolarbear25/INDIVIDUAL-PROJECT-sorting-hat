@@ -48,6 +48,6 @@ targeting.innerHTML = cards;
 
 
  
-console.log(submit);
+
 
 //cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
