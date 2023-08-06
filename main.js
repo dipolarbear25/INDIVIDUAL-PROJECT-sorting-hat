@@ -26,7 +26,7 @@ const btn = document.querySelector("#Submit");
 const targeting = document.querySelector("#wizard-card");
 
 
-//create a function for event listen
+//create a function for event listener
 
 let cards = "";  //important
 
