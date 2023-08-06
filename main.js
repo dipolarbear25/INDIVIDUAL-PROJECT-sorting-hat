@@ -27,7 +27,6 @@ const targeting = document.querySelector("#wizard-card");
 
 
 //create a function for event listen
-function cardOnDom() {
 
 const cards = "";
 
@@ -42,8 +41,6 @@ for (const student of students) {
   </div>`;
     };
 targeting.innerHTML = cards;
-};
-cardOnDom();
 
 function btnCard(){
 document.querySelector("name")    //on click
