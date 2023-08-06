@@ -25,10 +25,12 @@ const form = document.getElementById("formId")
 
 const targeting = document.querySelector("#wizard-card");
 
-form.addEventListener('submit', createStudent);    
+form.addEventListener('Submit',(e) => {
+  e.preventDefault();
+});    //looking for btn press and stops page refresh
 
 let cards = "";  //important
-function cardsOnDom (){
+function cardsOnDom(){
 for (let student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
@@ -42,25 +44,7 @@ for (let student of students) {
 cardsOnDom();
 targeting.innerHTML = cards;
 
-const cardOnDom = document.getElementById("fname").value
-
-const createStudent = (e) => {
-  e.preventDefault();
-
-  const randNum = Math.ceil(Math.random() * 4);
-  const randomStudent = students[randNum];
-  console.log(randNum);
-
-  const newStudentObj = {
-    id: students.length +1,
-    name: document.querySelector("#name").value,
-    house: randomStudent.house
-  }
-
-  students.push(newStudentObj);
-  cardsOnDom(students);
-  form.reset()
-};
+const cardOnDom = document.getElementById("fname").value  
 
 
  
