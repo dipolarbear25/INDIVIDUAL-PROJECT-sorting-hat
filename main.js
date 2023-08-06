@@ -56,4 +56,4 @@ btn.addEventListener('click', btnCard);    // listening for a click
 
 
 
-//cards need to be rendered (done) and a form to create the cards and be able to submit the form. by MONDAY.
+//cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
