@@ -1,4 +1,4 @@
-const students = [                     //object for examples of students in houses
+const students = [                    
   {
     id: 1,
     name: "Harry Potter",
@@ -27,9 +27,9 @@ const targeting = document.querySelector("wizard-card");
 
 form.addEventListener('Submit',(e) => {
   e.preventDefault();
-});    //looking for btn press and stops page refresh
+});    
 
-let cards = "";  //important
+let cards = "";  
 function cardsOnDom(){
 for (let student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
@@ -43,7 +43,3 @@ for (let student of students) {
     }};
 cardsOnDom();
 targeting.innerHTML = cards; 
-
-
-
-//cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
