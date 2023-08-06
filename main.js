@@ -21,7 +21,7 @@ const students = [                     //object for examples of students in hous
 
 const expelledStudents = [];
 
-const submit = getElementById("#Submit")
+let submit = document.getElementById("#Submit")
 
 const form = document.getElementById("formId")
 
@@ -50,6 +50,6 @@ const cardOnDom = document.getElementById("fname").value
 
 
  
-
+console.log(submit);
 
 //cards need to be rendered and a form to create the cards and be able to submit the form. by MONDAY.
