@@ -19,42 +19,58 @@ const students = [                     //object for examples of students in hous
   },
 ];
 
-const expelledStudents = [];
+// const expelledStudents = [];
 
 const form = document.getElementById("formId")
 
-const input = document.getElementById("fnameId").value
+// const input = document.getElementById("fnameId").innerHTML
 
 
 
-const targeting = document.querySelector("wizard-card");
+// const targeting = document.querySelector("wizard-card");
 
-document.write(input)
+// document.write(input)
+
+;    //looking for btn press and stops page refresh
+
+// const randomHouse = students[Math.floor(Math.random() * students.house)]
+// console.log(randomHouse)
+
+
+// let cards = "";  //important
+// function cardsOnDom(){
+// for (let student of students) {
+//   cards += `<div class="card" id="stuCard" style="width: 18rem;">
+//   <img src="..." class="card-img-top" alt="...">
+//   <div class="card-body">
+//   <h5 class="card-title">${student.house}</h5>
+//   <p class="card-text">${student.name}</p>
+//   <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
+//   </div>
+//   </div>`;
+//     }};
+// cardsOnDom();
+// targeting.innerHTML = cards; 
+
 
 form.addEventListener('Submit',(e) => {
   e.preventDefault();
-});    //looking for btn press and stops page refresh
+  const studentInput = new FormData(form);
+  const obj = Object.fromEntries(studentInput);
+  Array.push(studentInput);
+  console.log(studentInput);
 
-const randomHouse = students[Math.floor(Math.random() * students.house)]
-console.log(randomHouse)
-
-
-let cards = "";  //important
-function cardsOnDom(){
-for (let student of students) {
+  let cards = ""
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
-  <h5 class="card-title">${student.house}</h5>
-  <p class="card-text">${student.name}</p>
+  <h5 class="card-title"></h5>
+  <p class="card-text"></p>
   <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
   </div>
   </div>`;
-    }};
-cardsOnDom();
-targeting.innerHTML = cards; 
 
-
+})
  
 
 
