@@ -19,22 +19,25 @@ const students = [
   },
 ];
 
-const newstudents =[{}]
+const newstudents =[
+  {
+    
+  }]
 
 const expelledStudents = [];
 
-const name = document.getElementById("number")
+const name = document.getElementById(`name`)
 
-const btn = document.getElementById("name")
+const btn = document.getElementById(`number`)
 
-const targeting = document.getElementById("wizard-card");
+const targeting = document.getElementById(`wizard-card`);
 
 btn.addEventListener('submit',(e) => {
   e.preventDefault();
   //get the btn to take the value and push it into newstudents
 });    
 
-let card = document.getElementById("submit")
+let card = document.getElementById(`submit`)
 
 let cards = "";
 
