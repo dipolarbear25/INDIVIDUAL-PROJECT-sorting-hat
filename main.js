@@ -48,4 +48,4 @@ for (let student of students) {
    
     }};
 cardsOnDom(card);
-targeting.innerHTML = card;
+targeting.innerHTML = cards;
