@@ -26,7 +26,9 @@ const newstudents =[
 
 const expelledStudents = [];
 
-const name = document.getElementById(`name`)
+const user = document.getElementById(`name`)         //need to assign name.value to a variable.
+
+const username = user.value
 
 const btn = document.getElementById(`number`)
 
@@ -54,3 +56,6 @@ for (let student of students) {
   targeting.innerHTML = cards
     }};
 cardsOnDom();
+
+
+const newstudent = name.value
