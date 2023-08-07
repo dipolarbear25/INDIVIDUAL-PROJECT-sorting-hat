@@ -45,5 +45,5 @@ for (let student of students) {
   </div>
   </div>`;
     }};
-cardsOnDom();
 targeting.innerHTML = cards; 
+cardsOnDom();
