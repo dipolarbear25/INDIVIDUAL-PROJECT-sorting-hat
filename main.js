@@ -23,7 +23,7 @@ const newstudents =[{}]
 
 const expelledStudents = [];
 
-const btn = document.getElementById("number")
+const btn = document.getElementById("name")
 
 const targeting = document.getElementById("wizard-card");
 
