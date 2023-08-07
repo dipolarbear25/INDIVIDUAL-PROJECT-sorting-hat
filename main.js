@@ -36,8 +36,6 @@ let card = document.getElementById("submit")
 
 let cards = "";
 
-targeting.innerHTML = cards;
-
 function cardsOnDom(){
 for (let student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
@@ -48,6 +46,6 @@ for (let student of students) {
   <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
   </div>
   </div>`;
-   
+  targeting.innerHTML = cards
     }};
 cardsOnDom();
