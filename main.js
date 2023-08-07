@@ -23,9 +23,9 @@ const newstudents =[{}]
 
 const expelledStudents = [];
 
-const btn = document.getElementById("#submit2")
+const btn = document.getElementById("submit2")
 
-const targeting = document.querySelector("#wizard-card");
+const targeting = document.querySelector("wizard-card");
 
 form.addEventListener('submit',(e) => {
   e.preventDefault();
