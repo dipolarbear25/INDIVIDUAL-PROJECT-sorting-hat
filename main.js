@@ -45,4 +45,4 @@ for (let student of students) {
   </div>`;
     }};
 cardsOnDom(btn);
-targeting.innerHTML = cards; 
+cards = targeting.innerHTML; 
