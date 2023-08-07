@@ -48,4 +48,4 @@ for (let student of students) {
 cardsOnDom();
 targeting.innerHTML = cards;
 
-const cardsOnDom = document.getElementById("submit2")
+const card = document.getElementById("submit2")
