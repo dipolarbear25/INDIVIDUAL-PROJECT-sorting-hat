@@ -27,9 +27,8 @@ const btn = document.getElementById("#submit2")
 
 const targeting = document.querySelector("#wizard-card");
 
-form.addEventListener('Submit',(e) => {
+form.addEventListener('submit',(e) => {
   e.preventDefault();
-  input = document.getElementById("fnameId")
   
 });    
 
@@ -45,5 +44,5 @@ for (let student of students) {
   </div>
   </div>`;
     }};
-cardsOnDom();
+cardsOnDom(btn);
 targeting.innerHTML = cards; 
