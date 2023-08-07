@@ -32,7 +32,7 @@ btn.addEventListener('submit',(e) => {
   
 });    
 
-let card = document.getElementById("submit2").value
+let card = document.getElementById("number").value
 
 let cards = "";
 
