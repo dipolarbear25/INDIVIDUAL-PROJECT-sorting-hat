@@ -27,7 +27,7 @@ const btn = document.getElementById("submit2")
 
 const targeting = document.querySelector("wizard-card");
 
-form.addEventListener('submit',(e) => {
+btn.addEventListener('submit',(e) => {
   e.preventDefault();
   
 });    
