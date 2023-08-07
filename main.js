@@ -19,6 +19,8 @@ const students = [
   },
 ];
 
+const newstudents =[{}]
+
 const expelledStudents = [];
 
 const form = document.getElementById("formId")
@@ -27,6 +29,8 @@ const targeting = document.querySelector("wizard-card");
 
 form.addEventListener('Submit',(e) => {
   e.preventDefault();
+  input = document.getElementById("fnameId")
+  
 });    
 
 let cards = "";  
