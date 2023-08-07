@@ -23,7 +23,7 @@ const newstudents =[{}]
 
 const expelledStudents = [];
 
-const btn = document.getElementById("submit2")
+const btn = document.getElementById("number")
 
 const targeting = document.getElementById("wizard-card");
 
@@ -32,7 +32,7 @@ btn.addEventListener('submit',(e) => {
   
 });    
 
-let card = document.getElementById("number").value
+let card = document.getElementById("submit").value
 
 let cards = "";
 
