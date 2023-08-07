@@ -23,13 +23,15 @@ const newstudents =[{}]
 
 const expelledStudents = [];
 
+const name = document.getElementById("number")
+
 const btn = document.getElementById("name")
 
 const targeting = document.getElementById("wizard-card");
 
 btn.addEventListener('submit',(e) => {
   e.preventDefault();
-  
+  name.value
 });    
 
 let card = document.getElementById("submit")
