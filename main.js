@@ -43,6 +43,9 @@ for (let student of students) {
   <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
   </div>
   </div>`;
+   
     }};
-cardsOnDom(btn);
-cards = targeting.innerHTML; 
+cardsOnDom();
+targeting.innerHTML = cards;
+
+const cardsOnDom = document.getElementById("submit2")
