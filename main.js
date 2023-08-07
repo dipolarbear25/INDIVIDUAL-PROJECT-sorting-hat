@@ -32,7 +32,7 @@ btn.addEventListener('submit',(e) => {
   
 });    
 
-const cards = "";  
+let cards = "";  
 function cardsOnDom(){
 for (let student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
@@ -48,4 +48,4 @@ for (let student of students) {
 cardsOnDom();
 targeting.innerHTML = cards;
 
-const card = document.getElementById("submit2")
+let card = document.getElementById("submit2")
