@@ -32,10 +32,14 @@ const targeting = document.querySelector(`#wizard-card`);
 
 let card = document.querySelector(`#submit`)
 
-let cards = "";
+const renderToDom = (divId, htmlToRender) => {
+  const selectedDiv = document.querySelector(divId);
+  selectedDiv.innerHTML = htmlToRender;
+};
 
-function cardsOnDom(){
-for (let student of students) {
+const cardsOnDom = (array) => {
+  let cards = "";
+for (const student of array) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
@@ -44,11 +48,10 @@ for (let student of students) {
   <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
   </div>
   </div>`;
-  targeting.innerHTML = cards
-    }};
+    }
+  renderToDom("#wizard-card", cards)
+  };
 cardsOnDom();
-
-let cards = ""
 
 const createStudent = (e) => {
   e.preventDefault();
