@@ -36,11 +36,7 @@ const createStudent = (e) => {
 
 const targeting = document.querySelector(`#wizard-card`);
 
-form.addEventListener('submit',(e) => {
-   
-  newstudents.push(username)
-  //get the btn to take the value and push it into newstudents
-});    
+form.addEventListener('submit', createStudent) 
 
 let card = document.querySelector(`#submit`)
 
