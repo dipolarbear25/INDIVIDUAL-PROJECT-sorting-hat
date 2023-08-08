@@ -64,7 +64,7 @@ const createStudent = (e) => {
 form.addEventListener('submit', createStudent);
 
 const startApp = () => {
-  cardsOnDom(team);
+  cardsOnDom(students);
 }
 
 startApp();
