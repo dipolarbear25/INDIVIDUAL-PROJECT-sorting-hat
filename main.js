@@ -18,7 +18,7 @@ const students = [
     house: "Hufflepuff",
   },
 ];
-const objProperty = students.Math.floor(Math.random() * students.house)
+const objProperty = Math.floor(Math.random() * students.house)
 
 console.log(objAttribute);
 
