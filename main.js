@@ -29,8 +29,8 @@ const createStudent = (e) => {
   const newstudents = {
     id: students.length + 1,
     name: document.querySelector(`#name`),
-    house: 
-  }
+    house: students
+  };
 }
 
 
