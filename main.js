@@ -48,6 +48,8 @@ for (let student of students) {
     }};
 cardsOnDom();
 
+let cards = ""
+
 const createStudent = (e) => {
   e.preventDefault();
 
