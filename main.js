@@ -18,6 +18,11 @@ const students = [
     house: "Hufflepuff",
   },
 ];
+const objAttribute = students.house
+
+console.log(objAttribute);
+
+const userstudent = [{}]
 
 const expelledStudents = [];
 
@@ -29,7 +34,8 @@ const createStudent = (e) => {
   const newstudents = {
     id: students.length + 1,
     name: document.querySelector(`#name`),
-    house: students
+    house:  
+     //variable = Math.floor(Math.random() * arr.length)
   };
 }
 
