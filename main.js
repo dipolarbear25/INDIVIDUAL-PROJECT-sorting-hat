@@ -44,7 +44,7 @@ for (const student of array) {
   renderToDom("#wizard-card", cards)
   };
 
-const form = document.querySelector(`#form`)
+const form = document.querySelector(`#formId`)
 
   
 // const objProperty = Math.floor(Math.random() * students.house)
