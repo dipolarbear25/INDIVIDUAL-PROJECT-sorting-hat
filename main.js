@@ -57,6 +57,3 @@ for (let student of students) {
   targeting.innerHTML = cards
     }};
 cardsOnDom();
-
-
-const newstudent = name.value
