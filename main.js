@@ -36,7 +36,7 @@ const targeting = document.getElementById(`wizard-card`);
 
 btn.addEventListener('submit',(e) => {
   e.preventDefault();
-  newstudents,push(username)
+  newstudents.push(username)
   //get the btn to take the value and push it into newstudents
 });    
 
