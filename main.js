@@ -18,24 +18,16 @@ const students = [
     house: "Hufflepuff",
   },
 ];
-// const objProperty = Math.floor(Math.random() * students.house)
-
-// console.log(objProperty);
-
-const userstudent = [{}]
-
-const expelledStudents = [];
-
-const form = document.querySelector(`#form`)
-
-const targeting = document.querySelector(`#wizard-card`);
-
-let card = document.querySelector(`#submit`)
 
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
 };
+
+
+const userstudent = [{}]
+
+const expelledStudents = [];
 
 const cardsOnDom = (array) => {
   let cards = "";
@@ -51,18 +43,22 @@ for (const student of array) {
     }
   renderToDom("#wizard-card", cards)
   };
-cardsOnDom();
 
+const form = document.querySelector(`#form`)
+
+  
+// const objProperty = Math.floor(Math.random() * students.house)
 const createStudent = (e) => {
   e.preventDefault();
 
   const newstudents = {
     id: students.length + 1,
-    name: document.querySelector(`#name`),
-    house:  Math.floor(Math.random() * students.house)
+    name: document.querySelector(`#name`).value,
+    house: Math.floor(Math.random() * students.house)
   };
-  students.push(newstudents)
-  cardsOnDom(students)
+  students.push(newstudents);
+  cardsOnDom(students);
+  form.reset();
 };
 
-form.addEventListener('submit', createStudent)
+form.addEventListener('submit', createStudent);
