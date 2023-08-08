@@ -20,7 +20,7 @@ const students = [
 ];
 const objProperty = Math.floor(Math.random() * students.house)
 
-console.log(objAttribute);
+console.log(objProperty);
 
 const userstudent = [{}]
 
