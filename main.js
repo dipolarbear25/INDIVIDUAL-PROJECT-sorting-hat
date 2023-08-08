@@ -18,26 +18,15 @@ const students = [
     house: "Hufflepuff",
   },
 ];
-const objProperty = Math.floor(Math.random() * students.house)
+// const objProperty = Math.floor(Math.random() * students.house)
 
-console.log(objProperty);
+// console.log(objProperty);
 
 const userstudent = [{}]
 
 const expelledStudents = [];
 
 const form = document.querySelector(`#form`)
-
-const createStudent = (e) => {
-  e.preventDefault();
-
-  const newstudents = {
-    id: students.length + 1,
-    name: document.querySelector(`#name`),
-    house:  Math.floor(Math.random() * students.house)
-  };
-}
-
 
 const targeting = document.querySelector(`#wizard-card`);
 
@@ -60,3 +49,15 @@ for (let student of students) {
   targeting.innerHTML = cards
     }};
 cardsOnDom();
+
+const createStudent = (e) => {
+  e.preventDefault();
+
+  const newstudents = {
+    id: students.length + 1,
+    name: document.querySelector(`#name`),
+    house:  Math.floor(Math.random() * students.house)
+  };
+  students.push(newstudents)
+  cardsOnDom(students)
+};
