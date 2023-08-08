@@ -26,21 +26,31 @@ const newstudents =[
 
 const expelledStudents = [];
 
-const user = document.getElementById(`name`)         //need to assign name.value to a variable.
+const user = document.querySelector(`#name`)         //need to assign name.value to a variable.
 
 const username = user.value
 
-const btn = document.getElementById(`number`)
+const form = document.querySelector(`#form`)
 
-const targeting = document.getElementById(`wizard-card`);
-
-btn.addEventListener('submit',(e) => {
+const createStudent = (e) => {
   e.preventDefault();
+
+  const newstudents = {
+    id: students.length + 1
+    name: username
+  }
+}
+
+
+const targeting = document.querySelector(`#wizard-card`);
+
+form.addEventListener('submit',(e) => {
+   
   newstudents.push(username)
   //get the btn to take the value and push it into newstudents
 });    
 
-let card = document.getElementById(`submit`)
+let card = document.querySelector(`#submit`)
 
 let cards = "";
 
