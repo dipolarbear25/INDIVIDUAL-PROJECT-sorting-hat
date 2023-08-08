@@ -63,3 +63,4 @@ const createStudent = (e) => {
 };
 
 form.addEventListener('submit', createStudent);
+console.log(createStudent);
