@@ -34,8 +34,7 @@ const createStudent = (e) => {
   const newstudents = {
     id: students.length + 1,
     name: document.querySelector(`#name`),
-    house:  
-     //variable = Math.floor(Math.random() * arr.length)
+    house:  Math.floor(Math.random() * students.house)
   };
 }
 
