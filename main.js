@@ -19,16 +19,7 @@ const students = [
   },
 ];
 
-const newstudents =[
-  {
-    
-  }]
-
 const expelledStudents = [];
-
-const user = document.querySelector(`#name`)         //need to assign name.value to a variable.
-
-const username = user.value
 
 const form = document.querySelector(`#form`)
 
@@ -36,8 +27,9 @@ const createStudent = (e) => {
   e.preventDefault();
 
   const newstudents = {
-    id: students.length + 1
-    name: username
+    id: students.length + 1,
+    name: document.querySelector(`#name`),
+    house: 
   }
 }
 
