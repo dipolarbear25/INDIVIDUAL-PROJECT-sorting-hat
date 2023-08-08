@@ -30,8 +30,6 @@ const form = document.querySelector(`#form`)
 
 const targeting = document.querySelector(`#wizard-card`);
 
-form.addEventListener('submit', createStudent) 
-
 let card = document.querySelector(`#submit`)
 
 let cards = "";
@@ -61,3 +59,5 @@ const createStudent = (e) => {
   students.push(newstudents)
   cardsOnDom(students)
 };
+
+form.addEventListener('submit', createStudent)
