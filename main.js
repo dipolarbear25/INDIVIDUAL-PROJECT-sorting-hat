@@ -59,6 +59,7 @@ const createStudent = (e) => {
   students.push(newstudents);
   cardsOnDom(students);
   form.reset();
+  console.log(newstudents);
 };
 
 form.addEventListener('submit', createStudent);
