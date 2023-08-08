@@ -59,8 +59,12 @@ const createStudent = (e) => {
   students.push(newstudents);
   cardsOnDom(students);
   form.reset();
-  console.log(newstudents);
 };
 
 form.addEventListener('submit', createStudent);
-console.log(createStudent);
+
+const startApp = () => {
+  cardsOnDom(team);
+}
+
+startApp();
