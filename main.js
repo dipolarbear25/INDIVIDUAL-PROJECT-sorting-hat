@@ -47,7 +47,9 @@ for (const student of students) {
 const form = document.querySelector(`#formId`)
 //somewhere in line 32 - 62 createStudent isnt creating a new div card.
   
-const objProperty = Math.floor(Math.random() * students)
+const objProperty = Math.floor(Math.random() * students.house)
+
+console.log(objProperty);
 
 const createStudent = (e) => {
   e.preventDefault();
