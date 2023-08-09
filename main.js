@@ -49,7 +49,7 @@ const form = document.querySelector(`#formId`)
   
 const house = students.house
 
-house = Math.
+house = Math.random(students.house)
 
 const createStudent = (e) => {
   e.preventDefault();
