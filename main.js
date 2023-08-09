@@ -46,9 +46,9 @@ for (const student of students) {
 
 const form = document.querySelector(`#formId`)
 //somewhere in line 32 - 62 createStudent isnt creating a new div card.
-  
-const objProperty = Math.floor(Math.random() * students.house)
 
+const objProperty = Math.floor(Math.random() * students.house)
+//this code is an issue^
 console.log(objProperty);
 
 const createStudent = (e) => {
@@ -57,7 +57,7 @@ const createStudent = (e) => {
   const newstudents = {
     id: students.length + 1,
     name: document.querySelector(`#name`).value,
-    house: objProperty
+    house: objProperty //<- and this one
   };
   students.push(newstudents);
   cardsOnDom(students);
