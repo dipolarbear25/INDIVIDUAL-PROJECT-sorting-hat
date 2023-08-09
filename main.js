@@ -53,7 +53,7 @@ const createStudent = (e) => {
 
   const newstudents = {
     id: students.length + 1,
-    name: document.querySelector(`#name`).value,
+    name: form.value,
     house: Math.floor(Math.random() * students.house)
   };
   students.push(newstudents);
