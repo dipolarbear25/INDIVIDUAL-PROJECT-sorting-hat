@@ -29,7 +29,7 @@ const userstudent = [{}]
 
 const expelledStudents = [];
 
-const cardsOnDom = (students) => {
+const cardsOnDom = () => {
   let cards = "";
 for (const student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
@@ -45,7 +45,7 @@ for (const student of students) {
   };
 
 const form = document.querySelector(`#formId`)
-
+//somewhere in line 32 - 62 createStudent isnt creating a new div card.
   
 // const objProperty = Math.floor(Math.random() * students.house)
 const createStudent = (e) => {
