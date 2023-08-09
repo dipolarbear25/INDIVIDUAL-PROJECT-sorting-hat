@@ -68,3 +68,7 @@ const startApp = () => {
 }
 
 startApp();
+
+
+//ITS FINALLY PRINTS!!!!!!
+//now i just need to get the house name to print, im getting NaN.
