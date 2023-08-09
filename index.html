@@ -13,10 +13,11 @@
 <body >
 
   <form id="formId">
-    <label>Please enter your first name:</label><br>
-    <input type="text" id="name" placeholder="What is your name?"><br>
-    <input type="button" id="number" value="click me">
-
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="name" placeholder="Name" required>
+      <label for="floatingInput">Name</label>
+    </div>
+    <button type="submit" class="btn btn-success" id="form-submit">submit</button>
   </form>
 
   
