@@ -18,7 +18,7 @@ const students = [
     house: "Hufflepuff",
   },
 ];
-
+//this takes the inner html of #wizard-card(empty) and renders the html the variable "cards" has 
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
@@ -29,9 +29,9 @@ const userstudent = [{}]
 
 const expelledStudents = [];
 
-const cardsOnDom = (array) => {
+const cardsOnDom = (students) => {
   let cards = "";
-for (const student of array) {
+for (const student of students) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
@@ -41,7 +41,7 @@ for (const student of array) {
   </div>
   </div>`;
     }
-  renderToDom("#wizard-card", cards)
+  renderToDom("#wizard-card", cards) //see line 21
   };
 
 const form = document.querySelector(`#formId`)
