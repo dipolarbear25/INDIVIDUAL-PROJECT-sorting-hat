@@ -47,9 +47,6 @@ for (const student of students) {
 const form = document.querySelector(`#formId`)
 
 
-const objProperty = Math.floor(Math.random() * students.house)
-//this code is an issue^
-console.log(objProperty);
 
 const createStudent = (e) => {
   e.preventDefault();
