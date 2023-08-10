@@ -57,7 +57,7 @@ const createStudent = (e) => {
   const newstudents = {
     id: students.length + 1,
     name: document.querySelector(`#name`).value,
-    house: objProperty //<- and this one
+    house: Math.floor(Math.random()) //<- and this one
   };
   students.push(newstudents);
   cardsOnDom(students);
