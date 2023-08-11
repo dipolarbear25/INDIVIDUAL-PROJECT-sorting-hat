@@ -37,7 +37,7 @@ for (const student of students) {
   <div class="card-body">
   <h5 class="card-title">${student.house}</h5>
   <p class="card-text">${student.name}</p>
-  <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
+  <a href="#" class="btn btn-primary" id="expelBtn">Expel</a>
   </div>
   </div>`;
     }
@@ -52,7 +52,7 @@ for (const student of students) {
     <div class="card-body">
     <h5 class="card-title">Death Eater</h5>
     <p class="card-text">${student.name}</p>
-    <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
+    <a href="#" class="btn btn-primary" id="expelBtn">Expel</a>
     </div>
     </div>`;
       }
@@ -75,6 +75,7 @@ const createStudent = (e) => {
     name: document.querySelector(`#name`).value,
     house: houseRandom()
   };
+
   students.push(newstudents);
   cardsOnDom(students);
   form.reset();
