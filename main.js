@@ -52,7 +52,7 @@ for (const student of students) {
            result = prop;
     return result;
 }
-console.log(pickRandomProperty(students.house));
+console.log(pickRandomProperty(students));
 
 const createStudent = (e) => {
   e.preventDefault();
