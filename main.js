@@ -18,7 +18,7 @@ const students = [
     house: "Hufflepuff",
   },
 ];
-//this takes the inner html of #wizard-card(empty) and renders the html the variable "cards" has 
+
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
@@ -41,11 +41,15 @@ for (const student of students) {
   </div>
   </div>`;
     }
-  renderToDom("#wizard-card", cards) //see line 21
+  renderToDom("#wizard-card", cards) 
   };
 
 const form = document.querySelector(`#formId`)
 
+const stuProp = Object.keys(students);
+
+const randomPropNum = Math.floor(math.random() * stuProp.length)
+console.log(randomPropNum);
 
 
 const createStudent = (e) => {
@@ -54,7 +58,7 @@ const createStudent = (e) => {
   const newstudents = {
     id: students.length + 1,
     name: document.querySelector(`#name`).value,
-    house: Math.random(students.house)//<- and this one
+    house: Math.random(students.house)
   };
   students.push(newstudents);
   cardsOnDom(students);
@@ -68,7 +72,3 @@ const startApp = () => {
 }
 
 startApp();
-
-
-//ITS FINALLY PRINTS!!!!!!
-//now i just need to get the house name to print, im getting NaN.
