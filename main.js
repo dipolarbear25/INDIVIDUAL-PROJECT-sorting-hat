@@ -52,8 +52,8 @@ const randomPropNum = Math.floor(Math.random() * stuProp.length)
 
 const randomPropName = stuProp[randomPropNum]
 
-console.log(randomPropName);
-
+const randonmPropValue = students[randomPropName]
+console.log(randonmPropValue);
 
 const createStudent = (e) => {
   e.preventDefault();
