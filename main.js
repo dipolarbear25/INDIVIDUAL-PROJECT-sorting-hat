@@ -44,6 +44,22 @@ for (const student of students) {
   renderToDom("#wizard-card", cards) 
   };
 
+  const cardsOnDomExplled = () => {
+    let cards = "";
+  for (const student of students) {
+    cards += `<div class="card" id="stuCard" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">Death Eater</h5>
+    <p class="card-text">${student.name}</p>
+    <a href="#" class="btn btn-primary" id="expelbtn">Expel</a>
+    </div>
+    </div>`;
+      }
+    renderToDom("#expelledStudents", cards) 
+    };
+
+
 const form = document.querySelector(`#formId`)
 
 const houseRandom = () => {
