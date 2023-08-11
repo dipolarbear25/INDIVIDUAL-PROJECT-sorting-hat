@@ -44,20 +44,11 @@ for (const student of students) {
   renderToDom("#wizard-card", cards) 
   };
 
-const form = document.querySelector(`#formId`)
-
-const stuProp = Object.keys(students);
-
-const randomPropNum = Math.floor(Math.random() * stuProp.length)
-
-const randomPropName = stuProp[randomPropNum]
-
-const randomPropValue = students[randomPropName]
-
-const randomValue = Math.floor(Math.random() * randomPropValue.length)
-
-console.log(randomPropValue[randomValue]);
-
+  var randomProperty = function (students) {
+    var keys = Object.keys(students);
+    return students[keys[ keys.length * Math.random() << 0]];
+};
+console.log(randomProperty);
 const createStudent = (e) => {
   e.preventDefault();
 
