@@ -44,11 +44,16 @@ for (const student of students) {
   renderToDom("#wizard-card", cards) 
   };
 
-  var randomProperty = function (students) {
-    var keys = Object.keys(students);
-    return students[keys[ keys.length * Math.random() << 0]];
-};
-console.log(randomProperty);
+  function pickRandomProperty(obj) {
+    var result;
+    var count = 0;
+    for (var prop in obj)
+        if (Math.random() < 1/++count)
+           result = prop;
+    return result;
+}
+console.log(pickRandomProperty(students.house));
+
 const createStudent = (e) => {
   e.preventDefault();
 
