@@ -46,13 +46,13 @@ for (const student of students) {
 
 const form = document.querySelector(`#formId`)
 
-const stuProp = Object.keys(students.house);
+const stuProp = Object.keys(students);
 
 const randomPropNum = Math.floor(Math.random() * stuProp.length)
 
 const randomPropName = stuProp[randomPropNum]
 
-const randomPropValue = students.house[randomPropName]
+const randomPropValue = students[randomPropName]
 
 const randomValue = Math.floor(Math.random() * randomPropValue.length)
 
