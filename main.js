@@ -48,8 +48,11 @@ const form = document.querySelector(`#formId`)
 
 const stuProp = Object.keys(students);
 
-const randomPropNum = Math.floor(math.random() * stuProp.length)
-console.log(randomPropNum);
+const randomPropNum = Math.floor(Math.random() * stuProp.length)
+
+const randomPropName = stuProp[randomPropNum]
+
+console.log(randomPropName);
 
 
 const createStudent = (e) => {
