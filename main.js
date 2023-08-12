@@ -98,30 +98,9 @@ const events = () => {
   })
 };
 
-const expelStudent = (event) => {
-  event.preventDefault();
-  if (event.target.id.includes('expelBtn')) {
-    const [, studentId] = event.target.id.split('--');
-
-    const indexOfStudents = students.findIndex(
-      (student) => Number(studentId) === student.id
-    );
-
-    const expelStudents = students.splice(indexOfStudents, 1);
-
-    expelledStudents.push(expelStudents);
-    
-    cardsOnDomExplled(expelStudents);
-
-    cardsOnDom(students);
-  }
-};
-
-    
 
 
-
-  const startApp = () => {
+const startApp = () => {
   cardsOnDom(students);
   cardsOnDomExplled(expelledStudents);
   events();
