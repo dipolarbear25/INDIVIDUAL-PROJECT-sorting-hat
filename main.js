@@ -24,6 +24,7 @@ const renderToDom = (divId, htmlToRender) => {
   selectedDiv.innerHTML = htmlToRender;
 };
 
+const filter = document.querySelector("#filterBtn")
 
 const userstudent = [{}]
 
@@ -61,6 +62,10 @@ for (const student of students) {
 
 
 const form = document.querySelector(`#formId`)
+
+filter.addEventListener(``)
+
+
 
 const houseRandom = () => {
   const houses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"];
