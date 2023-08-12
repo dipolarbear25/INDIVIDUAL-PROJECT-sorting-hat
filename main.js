@@ -24,9 +24,7 @@ const renderToDom = (divId, htmlToRender) => {
   selectedDiv.innerHTML = htmlToRender;
 };
 
-const filter = document.querySelector("#filterBtn")
-
-const userstudent = [{}]
+const filter = document.querySelector('#filterBtn')
 
 const expelledStudents = [];
 
