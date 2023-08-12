@@ -28,9 +28,9 @@ const filter = document.querySelector('#filterBtn')
 
 const expelledStudents = [];
 
-const cardsOnDom = () => {
+const cardsOnDom = (array) => {
   let cards = "";
-for (const student of students) {
+for (const student of array) {
   cards += `<div class="card" id="stuCard" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
@@ -43,9 +43,9 @@ for (const student of students) {
   renderToDom("#wizard-card", cards) 
   };
 
-  const cardsOnDomExplled = () => {
+  const cardsOnDomExplled = (array) => {
     let cards = "";
-  for (const student of students) {
+  for (const student of array) {
     cards += `<div class="card" id="stuCard" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
@@ -86,13 +86,13 @@ const events = () => {
   filter.addEventListener('click', (e) =>{
     if (e.target.id == "all") {
       cardsOnDom(students); 
-    } else if (e.target.id == "Gryffindor") {
+    } else if (e.target.id == "gry") {
       cardsOnDom(students.filter(student => student.house === "Gryffindor"));
-    } else if (e.target.id == "Ravenclaw") {
+    } else if (e.target.id == "rav") {
       cardsOnDom(students.filter(student => student.house === "Ravenclaw"));
-    } else if (e.target.id == "Slytherin") {
+    } else if (e.target.id == "sly") {
       cardsOnDom(students.filter(student => student.house === "Slytherin"));
-    } else if (e.target.id == "Hufflepuff") {
+    } else if (e.target.id == "huf") {
       cardsOnDom(students.filter(student => student.house === "Hufflepuff"));
     }
   })
