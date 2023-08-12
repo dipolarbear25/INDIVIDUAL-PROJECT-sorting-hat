@@ -45,12 +45,12 @@ for (const student of array) {
 
   const cardsOnDomExplled = (array) => {
     let cards = "";
-  for (const student of array) {
+  for (const expelled of array) {
     cards += `<div class="card" id="stuCard" style="width: 18rem;">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
     <h5 class="card-title">Death Eater</h5>
-    <p class="card-text">${student.name}</p>
+    <p class="card-text">${expelled.name}</p>
     <a href="#" class="btn btn-primary" id="expelBtn">Expel</a>
     </div>
     </div>`;
@@ -98,8 +98,30 @@ const events = () => {
   })
 };
 
+const expelStudent = (event) => {
+  event.preventDefault();
+  if (event.target.id.includes('expel')) {
+    const [, studentId] = event.target.id.split('--');
 
-const startApp = () => {
+    const indexOfStudents = students.findIndex(
+      (student) => Number(studentId) === student.id
+    );
+
+    const expelStudents = students.splice(indexOfStudents, 1);
+
+    expelledStudents.push(expelStudents);
+    
+    cardsOnDomExplled(expelStudents);
+
+    cardsOnDom(students);
+  }
+};
+
+    
+
+
+
+  const startApp = () => {
   cardsOnDom(students);
   cardsOnDomExplled(expelledStudents);
   events();
