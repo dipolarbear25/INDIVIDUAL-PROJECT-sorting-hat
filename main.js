@@ -78,7 +78,6 @@ const createStudent = (e) => {
 
   students.push(newstudents);
   cardsOnDom(students);
-  form.reset();
 };
 
 
@@ -97,11 +96,12 @@ const events = () => {
       cardsOnDom(students.filter(student => student.house === "Hufflepuff"));
     }
   })
-}
+};
 
 
 const startApp = () => {
   cardsOnDom(students);
+  cardsOnDomExplled(expelledStudents);
   events();
 }
 
