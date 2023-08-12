@@ -63,10 +63,6 @@ for (const student of students) {
 
 const form = document.querySelector(`#formId`)
 
-filter.addEventListener(``)
-
-
-
 const houseRandom = () => {
   const houses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"];
   return houses[Math.floor(Math.random() * 4)]; 
@@ -85,11 +81,21 @@ const createStudent = (e) => {
   cardsOnDom(students);
   form.reset();
 };
+const events = () => {
+  form.addEventListener('submit', createStudent);
+  filter.addEventListener(`click`, (e) =>{
+    if (e.target.id == "all") {
+      cardsOnDom(students); 
+    } else if (e.target.id == "Gryffindor") {
+      cardsOnDom(students.filter(student => student.house === "Gryffindor"));
+    }
+  })
+}
 
-form.addEventListener('submit', createStudent);
 
 const startApp = () => {
   cardsOnDom(students);
+  events();
 }
 
 startApp();
