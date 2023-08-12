@@ -100,7 +100,7 @@ const events = () => {
 
 const expelStudent = (event) => {
   event.preventDefault();
-  if (event.target.id.includes('expel')) {
+  if (event.target.id.includes('expelBtn')) {
     const [, studentId] = event.target.id.split('--');
 
     const indexOfStudents = students.findIndex(
