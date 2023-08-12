@@ -88,6 +88,12 @@ const events = () => {
       cardsOnDom(students); 
     } else if (e.target.id == "Gryffindor") {
       cardsOnDom(students.filter(student => student.house === "Gryffindor"));
+    } else if (e.target.id == "Ravenclaw") {
+      cardsOnDom(students.filter(student => student.house === "Ravenclaw"));
+    } else if (e.target.id == "Slytherin") {
+      cardsOnDom(students.filter(student => student.house === "Slytherin"));
+    } else if (e.target.id == "Hufflepuff") {
+      cardsOnDom(students.filter(student => student.house === "Hufflepuff"));
     }
   })
 }
