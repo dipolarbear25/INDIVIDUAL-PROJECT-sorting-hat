@@ -58,7 +58,7 @@ for (const student of array) {
     renderToDom("#expelledStudents", cards) 
     };
 
-
+const expel = document.querySelector('#expelBtn')
 const form = document.querySelector(`#formId`)
 
 const houseRandom = () => {
