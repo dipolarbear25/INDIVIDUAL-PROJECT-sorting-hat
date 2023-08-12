@@ -107,11 +107,11 @@ expel.addEventListener('click', (e) => {
     const [, id] = e.target.id.split("--");
 
    
-    const index = students.findIndex(e => e.id === Number(id));
-    students.splice(index, 1);
+    const index = expelledStudents.findIndex(e => e.id === Number(id));
+    expelledStudents.splice(index, 1);
 
     
-    cardsOnDom(students);
+    cardsOnDom(expelledStudents);
   }
 });
 
