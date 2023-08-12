@@ -58,7 +58,6 @@ for (const student of array) {
     renderToDom("#expelledStudents", cards) 
     };
 
-const expel = document.querySelector('#expelBtn')
 const form = document.querySelector(`#formId`)
 
 const houseRandom = () => {
@@ -98,7 +97,23 @@ const events = () => {
   })
 };
 
+const expel = document.querySelector('#expelBtn')
 
+
+
+expel.addEventListener('click', (e) => {
+ 
+  if (e.target.id.includes("expel")) {
+    const [, id] = e.target.id.split("--");
+
+   
+    const index = students.findIndex(e => e.id === Number(id));
+    students.splice(index, 1);
+
+    
+    cardsOnDom(students);
+  }
+});
 
 const startApp = () => {
   cardsOnDom(students);
