@@ -19,14 +19,14 @@ const students = [
   },
 ];
 
+const expelledStudents = [];
+
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
   selectedDiv.innerHTML = htmlToRender;
 };
 
 const filter = document.querySelector('#filterBtn')
-
-const expelledStudents = [];
 
 const cardsOnDom = (array) => {
   let cards = "";
@@ -98,7 +98,9 @@ const events = () => {
   })
 };
 
-
+expel.addEventListener('click', (e) => {
+  
+})
 
 const startApp = () => {
   cardsOnDom(students);
