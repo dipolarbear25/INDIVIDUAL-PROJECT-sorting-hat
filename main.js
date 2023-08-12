@@ -68,6 +68,7 @@ const houseRandom = () => {
   return houses[Math.floor(Math.random() * 4)]; 
   }
 
+
 const createStudent = (e) => {
   e.preventDefault();
 
@@ -81,9 +82,11 @@ const createStudent = (e) => {
   cardsOnDom(students);
   form.reset();
 };
+
+
 const events = () => {
   form.addEventListener('submit', createStudent);
-  filter.addEventListener(`click`, (e) =>{
+  filter.addEventListener('click', (e) =>{
     if (e.target.id == "all") {
       cardsOnDom(students); 
     } else if (e.target.id == "Gryffindor") {
