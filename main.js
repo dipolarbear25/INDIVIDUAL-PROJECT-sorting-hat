@@ -109,7 +109,6 @@ const expel = (e) => {
       expelledStudents.push(expelledStudent)
 
       cardsOnDomExpelled(expelledStudent);
-      cardsOnDom(students)
   }
 }
 
@@ -119,6 +118,7 @@ const startApp = () => {
   cardsOnDom(students);
   cardsOnDomExpelled(expelledStudents);
   events();
+  expel();
 }
 
 startApp();
