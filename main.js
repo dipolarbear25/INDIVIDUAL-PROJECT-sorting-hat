@@ -109,7 +109,7 @@ const events = () => {
 };
 
 const expel = (e) => {
-  if (e.id.includes("expelBtn")) {
+  if (e.id.includes("expelBtn--${student.id}")) {
     const [, studentId] = e.target.id.split("--")
     
     const studentIndex = team.findIndex (
