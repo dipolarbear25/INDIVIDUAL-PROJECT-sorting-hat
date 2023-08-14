@@ -121,8 +121,8 @@ const expel = (e) => {
 
       cardsOnDomExpelled(expelledStudent);
       cardsOnDom(students)
-  }
-}
+  };
+};
 
 
 
