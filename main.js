@@ -133,7 +133,6 @@ const startApp = () => {
   cardsOnDom(students);
   cardsOnDomExpelled(expelledStudents);
   filterBtn();
-  expel();
 }
 
 startApp();
