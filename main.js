@@ -116,8 +116,6 @@ expel.addEventListener('click', (e) => {
     cardsOnDom(students)
 
     cardsOnDomExpelled(expelledStudents);
-      
-    
   };
 });
 
