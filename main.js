@@ -113,7 +113,7 @@ const expel = document.querySelector("#wizard-card")
 expel.addEventListener('click', (e) => {
   if (e.target.id.includes('expelBtn')) {
 7
-    const [, studentIdx] = e.target.split("--");
+    const [, id] = e.target.id.split("--");
   
     const studentIndex = students.findIndex((student) => 
       student.id === Number(id));
@@ -123,7 +123,7 @@ expel.addEventListener('click', (e) => {
     expelledStudents.push(voldy)
     
     cardsOnDom(students)
-    
+
     cardsOnDomExpelled(expelledStudents);
       
     
