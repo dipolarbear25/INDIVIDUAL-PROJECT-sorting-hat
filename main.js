@@ -8,18 +8,29 @@ const students = [
     id: 2,
     name: "Luna Lovegood",
     house: "Ravenclaw",
-  },{
+  },
+  {
     id: 3,
     name: "Tom Riddle",
     house: "Slytherin",
-  },{
+  },
+  {
     id: 4,
     name: "Newt Scamander",
     house: "Hufflepuff",
   },
 ];
 
-const expelledStudents = [];
+const expelledStudents = [
+  {
+  id: 1,
+  name: "Draco Malfoy"
+  },
+  {
+  id: 2,
+  name: "Bellatrix Lestrange"
+  },
+];
 
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
