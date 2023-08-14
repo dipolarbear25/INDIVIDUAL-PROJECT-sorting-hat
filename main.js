@@ -109,9 +109,10 @@ const events = () => {
 };
 
 const expel = (e) => {
-  if (e.id.includes("expelBtn--${student.id}")) {
+  if (e.id.includes("expelBtn")) {
+
     const [, studentId] = e.target.id.split("--")
-    
+    console.log([, studentID]);
     const studentIndex = team.findIndex (
       (student) => Number(studentId) === student.id
       );
