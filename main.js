@@ -43,7 +43,7 @@ for (const student of array) {
   renderToDom("#wizard-card", cards) 
   };
 
-  const cardsOnDomExplled = (array) => {
+  const cardsOnDomExpelled = (array) => {
     let cards = "";
   for (const expelled of array) {
     cards += `<div class="card" id="stuCard" style="width: 18rem;">
@@ -106,13 +106,16 @@ const expel = (e) => {
       (student) => Number(studentId) === student.id
       );
       const expelledStudent = students.splice(studentIndex, 1);
-      
+      expelledStudents.push(expelledStudent)
+
+      cardsOnDomExpelled(expelledStudent);
+      cardsOnDom(students)
   }
 }
 
 const startApp = () => {
   cardsOnDom(students);
-  cardsOnDomExplled(expelledStudents);
+  cardsOnDomExpelled(expelledStudents);
   events();
 }
 
