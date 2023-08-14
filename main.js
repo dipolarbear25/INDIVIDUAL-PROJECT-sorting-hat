@@ -113,6 +113,8 @@ const expel = (e) => {
   }
 }
 
+console.log(expel);
+
 const startApp = () => {
   cardsOnDom(students);
   cardsOnDomExpelled(expelledStudents);
