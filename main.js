@@ -113,9 +113,9 @@ const expel = document.querySelector("#wizard-card")
 expel.addEventListener('click', (e) => {
   if (e.target.id.includes('expelBtn')) {
 7
-    const [, studentId] = e.target.split("--");
+    const [, studentIdx] = e.target.split("--");
   
-    const studentIndex = students.findIndex(student => student.id == studentId);
+    const studentIndex = students.findIndex(student => student.studentId == studentIdx);
     
     expelledStudents.push(students[studentIndex]);
         
