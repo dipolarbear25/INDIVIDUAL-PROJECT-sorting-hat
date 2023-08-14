@@ -111,7 +111,7 @@ const filterBtn = () => {
 const expel = document.querySelector("#wizard-card")
 
 expel.addEventListener('click', (e) => {
-  if (e.target.includes('expelBtn')) {
+  if (e.target.id.includes('expelBtn')) {
 7
     const [, studentId] = e.target.split("--");
   
