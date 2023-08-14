@@ -58,7 +58,7 @@ for (const student of array) {
     renderToDom("#expelledStudents", cards) 
     };
 
-const expel = document.querySelector('#expelBtn')
+
 const form = document.querySelector(`#formId`)
 
 const houseRandom = () => {
@@ -98,9 +98,11 @@ const events = () => {
   })
 };
 
-/*expel.addEventListener('click', (e) => {
-  
-})*/
+const expel = (taco) => {
+  if (taco.id.includes("expelBtn")) {
+    
+  }
+}
 
 const startApp = () => {
   cardsOnDom(students);
