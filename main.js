@@ -98,9 +98,9 @@ const events = () => {
   })
 };
 
-expel.addEventListener('click', (e) => {
+/*expel.addEventListener('click', (e) => {
   
-})
+})*/
 
 const startApp = () => {
   cardsOnDom(students);
