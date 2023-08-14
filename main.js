@@ -113,14 +113,14 @@ const expel = (e) => {
 7
     const [, studentId] = e.target.id.split("--");
   
-    const studentIndex = team.findIndex (
+    const studentIndex = students.findIndex (
       (student) => Number(studentId) === student.id
       );
       const expelledStudent = students.splice(studentIndex, 1);
       expelledStudents.push(expelledStudent);
 
       cardsOnDomExpelled(expelledStudent);
-      cardsOnDom(students);
+      cardsOnDom(students)
   };
 };
 
