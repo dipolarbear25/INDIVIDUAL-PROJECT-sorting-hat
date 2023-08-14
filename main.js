@@ -98,9 +98,14 @@ const events = () => {
   })
 };
 
-const expel = (taco) => {
-  if (taco.id.includes("expelBtn")) {
+const expel = (e) => {
+  if (e.id.includes("expelBtn")) {
+    const [, studentId] = e.target.id.split("--")
     
+    const studentIndex = team.findIndex (
+      (student) => Number(studentId) === student.id
+      );
+      expelledStudent = students.splice(studentIndex, 1);
   }
 }
 
