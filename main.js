@@ -115,7 +115,8 @@ expel.addEventListener('click', (e) => {
 7
     const [, studentIdx] = e.target.split("--");
   
-    const studentIndex = students.findIndex(student => student.studentId == studentIdx);
+    const studentIndex = students.findIndex(student => 
+      student.id == studentIdx);
     
     expelledStudents.push(students[studentIndex]);
         
