@@ -23,12 +23,12 @@ const students = [
 
 const expelledStudents = [
   {
-  id: 1,
-  name: "Draco Malfoy"
+    id: 1,
+    name: "Draco Malfoy"
   },
   {
-  id: 2,
-  name: "Bellatrix Lestrange"
+    id: 2,
+    name: "Bellatrix Lestrange"
   },
 ];
 
