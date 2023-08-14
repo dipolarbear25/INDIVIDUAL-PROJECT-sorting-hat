@@ -117,10 +117,10 @@ const expel = (e) => {
       (student) => Number(studentId) === student.id
       );
       const expelledStudent = students.splice(studentIndex, 1);
-      expelledStudents.push(expelledStudent)
+      expelledStudents.push(expelledStudent);
 
       cardsOnDomExpelled(expelledStudent);
-      cardsOnDom(students)
+      cardsOnDom(students);
   };
 };
 
