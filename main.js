@@ -47,7 +47,7 @@ for (const student of array) {
   <div class="card-body">
   <h5 class="card-title">${student.house}</h5>
   <p class="card-text">${student.name}</p>
-  <p class="card-text"><small class="text-body-secondary"><button type="button" class="btn btn-outline-danger" id='expelBtn--${student.id}'>Expel</button></small></p>
+  <p class="card-text"><small class="text-body-secondary"><button type="button" class="btn btn-outline-danger" id="expelBtn--${student.id}">Expel</button></small></p>
   </div>
   </div>`;
     }
@@ -115,16 +115,18 @@ expel.addEventListener('click', (e) => {
 7
     const [, studentIdx] = e.target.split("--");
   
-    const studentIndex = students.findIndex(student => 
-      student.id == studentIdx);
+    const studentIndex = students.findIndex((student) => 
+      student.id === Number(id));
     
-    expelledStudents.push(students[studentIndex]);
-        
-      students.splice(studentIndex, 1);
+    let voldy = students.splice(studentIndex, 1)[0];
+     
+    expelledStudents.push(voldy)
+    
+    cardsOnDom(students)
+    
+    cardsOnDomExpelled(expelledStudents);
       
-      cardsOnDomExpelled(expelledStudents);
-      
-      cardsOnDom(students)
+    
   };
 });
 
