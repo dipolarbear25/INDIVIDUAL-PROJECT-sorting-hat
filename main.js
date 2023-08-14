@@ -47,7 +47,7 @@ for (const student of array) {
   <div class="card-body">
   <h5 class="card-title">${student.house}</h5>
   <p class="card-text">${student.name}</p>
-  <button id="expelBtn">Expel</button>
+  <button id="expelBtn--${student.id}">Expel</button>
   </div>
   </div>`;
     }
