@@ -21,16 +21,7 @@ const students = [
   },
 ];
 
-const expelledStudents = [
-  {
-    id: 1,
-    name: "Draco Malfoy"
-  },
-  {
-    id: 2,
-    name: "Bellatrix Lestrange"
-  },
-];
+const expelledStudents = [];
 
 const renderToDom = (divId, htmlToRender) => {
   const selectedDiv = document.querySelector(divId);
