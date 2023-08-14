@@ -105,7 +105,8 @@ const expel = (e) => {
     const studentIndex = team.findIndex (
       (student) => Number(studentId) === student.id
       );
-      expelledStudent = students.splice(studentIndex, 1);
+      const expelledStudent = students.splice(studentIndex, 1);
+      
   }
 }
 
