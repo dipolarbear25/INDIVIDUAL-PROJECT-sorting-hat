@@ -91,7 +91,7 @@ const createStudent = (e) => {
 };
 
 
-const events = () => {
+const filterBtn = () => {
   form.addEventListener('submit', createStudent);
   filter.addEventListener('click', (e) =>{
     if (e.target.id == "all") {
@@ -108,28 +108,31 @@ const events = () => {
   })
 };
 
-const expel = (e) => {
-  if (e.target.id.includes("expelBtn")) {
-7
-    const [, studentId] = e.target.id.split("--");
-  
-    const studentIndex = students.findIndex (
-      (student) => Number(studentId) === student.id
-      );
-      const expelledStudent = students.splice(studentIndex, 1);
-      expelledStudents.push(expelledStudent);
+const expel = document.querySelector("#wizard-card")
 
-      cardsOnDomExpelled(expelledStudent);
+expel.addEventListener('click', (e) => {
+  if (e.target.includes('expelBtn')) {
+7
+    const [, studentId] = e.target.split("--");
+  
+    const studentIndex = students.findIndex(student => student.id == studentId);
+    
+    expelledStudents.push(students[studentIndex]);
+        
+      students.splice(studentIndex, 1);
+      
+      cardsOnDomExpelled(expelledStudents);
+      
       cardsOnDom(students)
   };
-};
+});
 
 
 
 const startApp = () => {
   cardsOnDom(students);
   cardsOnDomExpelled(expelledStudents);
-  events();
+  filterBtn();
   expel();
 }
 
